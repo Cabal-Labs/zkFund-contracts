@@ -11,7 +11,7 @@ export default async function (hre: HardhatRuntimeEnvironment) {
     // It is assumed that this wallet already has sufficient funds on zkSync
     // ⚠️ Never commit private keys to file tracking history, or your account could be compromised.
     const provider = new Provider("https://zksync2-testnet.zksync.dev");
-    const wallet = new Wallet("500972f2d1e5f358cff2f30d0896effae46b84ecede6fac52e0415981dead97c", provider);
+    const wallet = new Wallet("", provider);
     
     const deployer = new Deployer(hre, wallet);
 
@@ -144,7 +144,7 @@ export default async function (hre: HardhatRuntimeEnvironment) {
     
 
 
-    const testCharityWallet = new Wallet("78bac92b2882a5792f97a54668ef49bfd0938812f7e2c00f8621a01fe2d8b546", provider);
+    const testCharityWallet = new Wallet("", provider);
     const artifact = hre.artifacts.readArtifactSync("CharityRegistry");
     const charityRegistryForFees = new Contract(charityRegistry.address, artifact.abi, testCharityWallet);
 
