@@ -14,7 +14,7 @@ module.exports = {
     },
     zkSyncTestnet: {
       url: "https://zksync2-testnet.zksync.dev",
-      ethNetwork: "https://eth-goerli.g.alchemy.com/v2/tb14Hsk3uF7yilSybLouN-sdaLnsC_DD", // Can also be the RPC URL of the network (e.g. `https://goerli.infura.io/v3/<API_KEY>`)
+      ethNetwork: "", // Can also be the RPC URL of the network (e.g. `https://goerli.infura.io/v3/<API_KEY>`)
       zksync: true,
     },
   },
